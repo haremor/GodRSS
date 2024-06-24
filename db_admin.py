@@ -8,7 +8,7 @@ db.init_db()
 user_id = '1013991164'
 
 status = db.get_user_premium_status(user_id)
-db.change_user_premium_status(user_id, False)
+db.change_user_premium_status(user_id, True)
 
 print(f'The status of user "{user_id}" has been changed to: {status[0]}')
 

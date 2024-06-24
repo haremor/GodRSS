@@ -213,7 +213,7 @@ def start_polling(message):
             __poll_news(saved_feed_states)
             original_feeds = deepcopy(saved_feed_states)
 
-            if user_has_premium_status:
+            if user_has_premium_status[0]:
                 sleep(PREMIUM_POLLING_RATE)
             else:
                 sleep(POLLING_RATE)
